@@ -1,0 +1,94 @@
+/* App.css */
+
+/* Definições gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background: linear-gradient(135deg, #560bad, #b277e8, #485bd5, #5db8e6); /* Gradiente de cores de fundo */
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite; /* Animação do gradiente */
+  }
+  
+  /* Animação do gradiente de fundo */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Estilos do aplicativo */
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Altura mínima igual à altura da viewport */
+  }
+  
+  /* Estilo do título */
+  h1 {
+    margin-bottom: 30px; /* Margem inferior */
+    color: #fff; /* Cor do texto */
+    font-size: 48px; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento central */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+  }
+  
+  /* Formulário de conversão */
+  .converter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Inputs e selects */
+  .converter input[type="number"],
+  .converter select {
+    padding: 12px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #fff; /* Cor da borda */
+    border-radius: 25px; /* Borda arredondada */
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo com transparência */
+  }
+  
+  .converter select {
+    padding: 12px 20px;
+  }
+  
+  /* Botão de conversão */
+  .converter button {
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #560bad; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 25px; /* Borda arredondada */
+    transition: background-color 0.3s ease;
+  }
+  
+  .converter button:hover {
+    background-color: #833ab4; /* Cor de fundo do botão ao passar o mouse */
+  }
+  
+  /* Resultado da conversão */
+  .result {
+    font-size: 24px;
+    color: #fff; /* Cor do texto */
+    border: 2px solid #fff; /* Cor da borda */
+    border-radius: 25px; /* Borda arredondada */
+    padding: 20px;
+    text-align: center;
+  }
+  
